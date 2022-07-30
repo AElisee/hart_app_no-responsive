@@ -1,0 +1,39 @@
+footer {
+  max-width: 1100px;
+  height: 200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+
+  h3 {
+    color: black;
+    font-style: italic;
+    font-weight: 900;
+
+    span {
+      color: gray;
+      font-family: $jostLight;
+      font-weight: 100;
+    }
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      cursor: pointer;
+
+      a {
+        color: gray !important;
+        font-weight: 800;
+      }
+    }
+  }
+
+}
