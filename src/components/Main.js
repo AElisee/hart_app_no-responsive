@@ -6,10 +6,24 @@ const Main = () => {
     const slide = document.querySelector(".scroll-item-container");
     slide.scrollLeft = slide.scrollLeft - 500;
   };
+
   const scrollRight = () => {
     const slide = document.querySelector(".scroll-item-container");
     slide.scrollLeft = slide.scrollLeft + 500;
   };
+
+  // to top circle display
+
+  window.addEventListener("scroll", () => {
+    const toTopBtn = document.getElementById("toTopBtn");
+    let scrollValue =
+      (window.scrollY + window.innerHeight) / document.body.offsetHeight;
+    if (scrollValue > 0.7) {
+      toTopBtn.style.visibility = "visible";
+    } else {
+      toTopBtn.style.visibility = "hidden";
+    }
+  });
 
   return (
     <main>
@@ -283,6 +297,10 @@ const Main = () => {
           </div>
         </div>
       </section>
+
+      <span id="toTopBtn" onClick={() => window.scrollTo(0, 0)}>
+        <i class="fa-solid fa-arrow-up"></i>
+      </span>
     </main>
   );
 };

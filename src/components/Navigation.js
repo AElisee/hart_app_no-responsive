@@ -6,7 +6,10 @@ const Navigation = () => {
     <nav>
       <ul>
         <li id="categories">
-          <NavLink to="/">
+          <NavLink
+            to="/"
+            className={(nav) => (nav.isActive ? "nav-active" : null)}
+          >
             Categories <i className="fa-solid fa-chevron-down"></i>
           </NavLink>
         </li>

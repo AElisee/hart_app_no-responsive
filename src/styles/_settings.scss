@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Jost";
-  src: url(../fonts/Jost-VariableFont_wght.ttf);
+  src: url(../assets/fonts/Jost-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: "Jost-light";
-  src: url(../fonts/Jost-Light.ttf);
+  src: url(../assets/fonts/Jost-Light.ttf);
 }
 
 
@@ -17,6 +17,10 @@ $white1: rgba(250, 249, 249, 0.938);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
